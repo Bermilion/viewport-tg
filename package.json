@@ -1,0 +1,35 @@
+{
+  "name": "sass-es6",
+  "version": "0.0.1",
+  "description": "preset",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:studio2i/sass-es6.git",
+  "author": "volkov.i <volkov.i@studio2i.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "gulp watch --env development",
+    "dev": "gulp dev --env development",
+    "prod": "gulp build --env production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-environments": "^0.1.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "path": "^0.12.7",
+    "webpack-cli": "^3.3.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.11",
+    "susy": "^3.0.5"
+  }
+}

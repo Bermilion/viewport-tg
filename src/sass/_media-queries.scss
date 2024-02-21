@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+ * Мин		Макс	Ориентация	Вьюпорт
+ * 0		767		portrait	pp
+ * 0		1023	landscape	pl
+ * 768		1279	portrait	tp
+ * 1024		1279	landscape	tl
+ * 1280		1599	Любая		l
+ * 1600		∞		Любая		w
+*/
+// Смартфоны в вертикальной ориентации
+@mixin phone-portrait { @media screen and (max-width: 767px) and (orientation: portrait) { @content } }
+// Смартфоны в альбомной ориентации
+@mixin phone-landscape { @media screen and (max-width: 1023px) and (orientation: landscape) { @content } }
+// Планшеты в вертикальной ориентации
+@mixin tablet-portrait { @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) { @content } }
+// Планшеты в альбомной ориентации
+@mixin tablet-landscape { @media screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) { @content } }
+// Все настольные устройства
+@mixin large { @media screen and (min-width: 1280px) and (max-width: 1599px) { @content } }
+// Широкоэкранные настольные устройства с экраном от 1600 пкс
+@mixin wide { @media screen and (min-width: 1600px) { @content } }
+// Мобильные устройства
+@mixin mobile { @media screen and (max-width: 1279px) { @content } }
+// Десктопы
+@mixin desktop { @media screen and (min-width: 1280px) { @content } }

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+@import "reset";
+@import "media-queries";
+@import "rem";
+
+$background-color: #F6F6F6;
+$heading-color: #222222;
+$hint-color: #555555;
+$paragraph-color: #888888;
+$primary-color: #0088FF;
+
+body {
+	font-size: 16rem;
+	line-height: 24rem;
+	font-family: "Golos Text", sans-serif;
+	background-color: $background-color;
+}
+
+.phone_portrait,
+.phone_landscape,
+.tablet_portrait,
+.tablet_landscape,
+.large,
+.wide {
+	display: inline-block;
+	background-color: white;
+	padding: 24px;
+	text-align: center;
+}
+
+.phone {
+	&_portrait {
+		@include phone_portrait {
+			background-color: $primary-color;
+			color: white;
+		}
+	}
+	&_landscape {
+		@include phone_landscape {
+			background-color: $primary-color;
+			color: white;
+		}
+	}
+}
+.tablet {
+	&_portrait {
+		@include tablet_portrait {
+			background-color: $primary-color;
+			color: white;
+		}
+	}
+	&_landscape {
+		@include tablet_landscape {
+			background-color: $primary-color;
+			color: white;
+		}
+	}
+}
+.large {
+	@include large {
+		background-color: $primary-color;
+		color: white;
+	}
+}
+.wide {
+	@include wide {
+		background-color: $primary-color;
+		color: white;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 56rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180rem, 1fr));
+	grid-gap: 8rem;
+	justify-content: center;
+	margin-bottom: 24rem;
+}
+.spacing {
+	padding: 0 16rem;
+
+	@include desktop {
+		max-width: 800rem;
+	}
+}
+
+.hero, h1, h2, h3, h4, h5, h6 {
+	color: #222222;
+}
+p {
+	color: #555555;
+}
+.subheading {
+	text-transform: uppercase;
+}
+.subheading, .hint {
+	color: #888888;
+}
+h6 {
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 24rem;
+	margin: 48rem 0 24rem 0;
+}
+p {
+	font-weight: 400;
+	font-size: 16rem;
+	line-height: 24rem;
+}
+.hint {
+	font-weight: 400;
+	font-size: 12rem;
+	line-height: 16rem;
+	margin-top: 24rem;
+}
+
+@include desktop {
+	.hero {
+		font-weight: 700;
+		font-size: 64rem;
+		line-height: 72rem;
+		margin-bottom: 72rem;
+	}
+	h1 {
+		font-weight: 700;
+		font-size: 48rem;
+		line-height: 56rem;
+		margin-bottom: 56rem;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 40rem;
+		line-height: 48rem;
+		margin: 96rem 0 48rem 0;
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 32rem;
+		line-height: 40rem;
+		margin: 80rem 0 40rem 0;
+	}
+	h4 {
+		font-weight: 500;
+		font-size: 32rem;
+		line-height: 40rem;
+		margin: 80rem 0 40rem 0;
+	}
+	h5 {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 32rem;
+		margin: 64rem 0 32rem 0;
+	}
+}
+@include mobile {
+	.hero {
+		font-weight: 700;
+		font-size: 32rem;
+		line-height: 40rem;
+		margin-bottom: 40rem;
+	}
+	h1 {
+		font-weight: 700;
+		font-size: 24rem;
+		line-height: 32rem;
+		margin-bottom: 32rem;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 20rem;
+		line-height: 24rem;
+		margin: 48rem 0 24rem;
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 16rem;
+		line-height: 24rem;
+		margin: 48rem 0 24rem 0;
+	}
+	h4 {
+		font-weight: 500;
+		font-size: 24rem;
+		line-height: 32rem;
+		margin: 64rem 0 32rem 0;
+	}
+	h5 {
+		font-weight: 500;
+		font-size: 20rem;
+		line-height: 24rem;
+		margin: 48rem 0 24rem 0;
+	}
+}

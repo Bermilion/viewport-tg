@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/*
+ * Сброс стандартного оформления
+ */
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html, body,
+div, span,
+header, nav, menu, aside, footer, section, article,
+p, a,
+strong,
+sub, sup,
+blockquote,
+figure, figcaption,
+img,
+form,
+label,
+q, s, b, u, i,
+h1, h2, h3, h4, h5, h6,
+em, tt,
+dl, dt, dd,
+ol, ul, li,
+table, tbody, tfoot, thead, caption,
+tr, th, td,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+ins,
+kbd,
+samp,
+small,
+strike,
+var,
+center,
+fieldset,
+legend,
+details,
+embed,
+hgroup,
+output,
+ruby,
+canvas,
+iframe,
+object,
+applet,
+summary,
+time,
+mark,
+video, audio,
+button, input, select
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+header, aside, footer,
+article, section,
+details,
+figcaption,
+hgroup,
+menu, nav {
+	display: block;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+	height: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-weight: normal;
+	font-style: normal;
+	font-family: inherit;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: normal;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+}
