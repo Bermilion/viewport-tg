@@ -14,14 +14,14 @@
 // Смартфоны в альбомной ориентации
 @mixin phone-landscape { @media screen and (max-width: 1023px) and (orientation: landscape) { @content } }
 // Планшеты в вертикальной ориентации
-@mixin tablet-portrait { @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait) { @content } }
+@mixin tablet-portrait { @media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait) { @content } }
 // Планшеты в альбомной ориентации
-@mixin tablet-landscape { @media screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) { @content } }
+@mixin tablet-landscape { @media screen and (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) { @content } }
 // Все настольные устройства
-@mixin large { @media screen and (min-width: 1280px) and (max-width: 1599px) { @content } }
+@mixin laptop { @media screen and (min-width: 1281px) and (max-width: 1599px) { @content } }
 // Широкоэкранные настольные устройства с экраном от 1600 пкс
 @mixin wide { @media screen and (min-width: 1600px) { @content } }
 // Мобильные устройства
-@mixin mobile { @media screen and (max-width: 1279px) { @content } }
+@mixin mobile { @media screen and (max-width: 1280px) { @content } }
 // Десктопы
-@mixin desktop { @media screen and (min-width: 1280px) { @content } }
+@mixin desktop { @media screen and (min-width: 1281px) { @content } }

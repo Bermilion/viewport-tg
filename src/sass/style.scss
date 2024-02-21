@@ -60,7 +60,7 @@ body {
 	}
 }
 .large {
-	@include large {
+	@include laptop {
 		background-color: $primary-color;
 		color: white;
 	}
